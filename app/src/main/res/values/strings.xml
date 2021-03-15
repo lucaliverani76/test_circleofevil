@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">circleofevil</string>
+    <string name="title_home">Colors</string>
+    <string name="title_dashboard">Functions</string>
+    <string name="title_notifications">Microphone</string>
+    <string name="title_music">Music</string>
+</resources>
