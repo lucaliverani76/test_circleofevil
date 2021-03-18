@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.example.test_circleofevil.MainActivity
 import com.example.test_circleofevil.R
 
 class HomeFragment : Fragment() {
@@ -22,6 +23,8 @@ class HomeFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
+
+        (activity as MainActivity?)?.myCanvasView?.setVisibility(View.VISIBLE);
         homeViewModel =
                 ViewModelProvider(this).get(HomeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
